@@ -6,5 +6,8 @@
         <page name='3.Optionals'/>
         <page name='4.Collections'/>
         <page name='5.MapCompactMapFlatMapSortFilterReduceTypealias'/>
+        <page name='6.Extensions'/>
+        <page name='7.GenericViewBulder'/>
+        <page name='8.Enums'/>
     </pages>
 </playground>
