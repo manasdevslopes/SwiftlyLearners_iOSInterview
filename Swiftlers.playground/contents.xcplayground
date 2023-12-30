@@ -9,5 +9,6 @@
         <page name='6.Extensions'/>
         <page name='7.GenericViewBulder'/>
         <page name='8.Enums'/>
+        <page name='Protocols'/>
     </pages>
 </playground>
