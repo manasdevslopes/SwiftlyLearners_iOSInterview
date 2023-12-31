@@ -120,3 +120,24 @@ array.map { n1 in
 array.map({$0 + 1})
 array.map { $0 + 1 }
 
+
+
+/* ******************************************************************************************************** */
+// Capture Value
+
+func makeIncrementer(incrementAmount: Int) -> (() -> Int) {
+  var total = 0
+  
+  let incrementer: () -> Int = {
+    total += incrementAmount
+    return total
+  }
+  return incrementer
+}
+
+let incrementByTwo = makeIncrementer(incrementAmount: 2)
+print(incrementByTwo())
+print(incrementByTwo())
+print(incrementByTwo())
+print(incrementByTwo())
+print(incrementByTwo())
