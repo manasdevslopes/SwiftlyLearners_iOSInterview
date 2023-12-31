@@ -11,6 +11,7 @@
         <page name='8.Enums'/>
         <page name='9.Protocols'/>
         <page name='10.RangeOperatorDeferSelfself'/>
-        <page name='tryAs'/>
+        <page name='11.tryAs'/>
+        <page name='12.Closures'/>
     </pages>
 </playground>
