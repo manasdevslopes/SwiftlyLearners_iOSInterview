@@ -9,6 +9,8 @@
         <page name='6.Extensions'/>
         <page name='7.GenericViewBulder'/>
         <page name='8.Enums'/>
-        <page name='Protocols'/>
+        <page name='9.Protocols'/>
+        <page name='10.RangeOperatorDeferSelfself'/>
+        <page name='tryAs'/>
     </pages>
 </playground>
