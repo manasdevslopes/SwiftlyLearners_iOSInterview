@@ -15,5 +15,6 @@
         <page name='12.Closures'/>
         <page name='Coding Questions'/>
         <page name='14.ClassVsStructs'/>
+        <page name='15.StrongWeakUnowned'/>
     </pages>
 </playground>

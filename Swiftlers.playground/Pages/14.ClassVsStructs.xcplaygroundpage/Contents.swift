@@ -201,16 +201,16 @@ print(viewModel3.showButton)
 
 /* ******************************************************************************************************** */
 // Topics to be covered serial wise
-// 2. Final Class , Singleton Class
-// 4. Strong, Weak, unowned References
-// 6. init and its types
-// 7. Access Controls
+// 2. Final Class , Singleton Class - 1
+// 6. init and its types - 2
+// 7. Access Controls - 3
+// Associated Protocols - 4
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
-// 9. Property Observer
+// 9. Property Observer - 5
 // 10. Dependency Injection
-// 11. AppStorage & UserDefaults
+// 11. AppStorage & UserDefaults - 6
 // 12. Custom Sound with Local Notifications
-// 13. All Life Cycle Methods
+// 13. All Life Cycle Methods - 7
 // 14. Swift Concurrency
 
 
