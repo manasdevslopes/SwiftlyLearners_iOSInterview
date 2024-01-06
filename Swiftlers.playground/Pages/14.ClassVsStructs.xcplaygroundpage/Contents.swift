@@ -64,7 +64,7 @@ struct UserModel2 {
 var user2: UserModel2 = UserModel2(name: "Manas", isPremium: false)
 func markUserAsPremium2() {
   print(user2)
-  user2 = UserModel2(name: user1.name, isPremium: true)
+  user2 = UserModel2(name: user2.name, isPremium: true)
   print(user2)
 }
 markUserAsPremium2()
@@ -116,13 +116,14 @@ print("User4----->", user4)
 // Value Type Example
 struct UserModel5 {
   let name: String
-  let isPremium: Bool
+  var isPremium: Bool
 }
 var userA: UserModel5 = UserModel5(name: "Manas", isPremium: false)
 print("UserA----->",userA)
 var userB = userA
 print("UserB----->",userB)
-userB = UserModel5(name: "Kanishk", isPremium: true)
+//userB = UserModel5(name: "Kanishk", isPremium: true)
+userB.isPremium = true
 print("UserA----->",userA)
 print("UserB----->",userB)
 
@@ -200,11 +201,8 @@ print(viewModel3.showButton)
 
 /* ******************************************************************************************************** */
 // Topics to be covered serial wise
-// 1. Revise
 // 2. Final Class , Singleton Class
-// 3. Threads & its types
 // 4. Strong, Weak, unowned References
-// 5. GCD & Memory Management
 // 6. init and its types
 // 7. Access Controls
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
@@ -214,4 +212,100 @@ print(viewModel3.showButton)
 // 12. Custom Sound with Local Notifications
 // 13. All Life Cycle Methods
 // 14. Swift Concurrency
+
+
+
+/* ******************************************************************************************************** */
+print("S1")
+DispatchQueue.main.async {
+  print("S2")
+}
+print("S3")
+// O/p -> S1, S3, S2
+
+/* ******************************************************************************************************** */
+print("1")
+DispatchQueue.main.async {
+  print("2")
+  DispatchQueue.main.async {
+    print("3")
+  }
+  print("4")
+}
+print("5")
+// O/p-> 1, 5, 2, 4, 3
+
+/* ******************************************************************************************************** */
+//DispatchQueue.main.async {
+//  DispatchQueue.main.sync {
+//    print("Print1")
+//  }
+//  print("Print2")
+//}
+// sync will block the main thread & we are creating deadlock scenario. Means Crash
+
+
+/* ******************************************************************************************************** */
+print("Print0")
+DispatchQueue.main.async {
+  print("Print1")
+  DispatchQueue.global().sync {
+    print("Print2")
+  }
+  print("Print3")
+}
+print("Print4")
+// O/p -> 0, 4, 1, 2, 3
+
+
+/* ******************************************************************************************************** */
+print("S0")
+DispatchQueue.global().sync {
+  print("S1")
+  DispatchQueue.global().sync {
+    print("S2")
+  }
+  print("S3")
+}
+print("S4")
+// O/p -> S0, S1, S2, S3, S4
+
+
+/* ******************************************************************************************************** */
+print("M0")
+DispatchQueue.global().async {
+  print("M1")
+  DispatchQueue.global().async {
+    print("M2")
+  }
+  print("M3")
+}
+print("M4")
+// O/p -> 0, 4, 1, 3, 2
+
+/* ******************************************************************************************************** */
+print("K0")
+DispatchQueue.global().async {
+  print("K1")
+  DispatchQueue.global().sync {
+    print("K2")
+  }
+  print("K3")
+}
+print("K4")
+// O/p -> 0, 4, 1, 2, 3
+
+
+/* ******************************************************************************************************** */
+print("C0")
+DispatchQueue.global().sync {
+  print("C1")
+  DispatchQueue.global().async {
+    print("C2")
+  }
+  print("C3")
+}
+print("C4")
+// O/p -> 0, 1, 3, 4, 2
+
 
