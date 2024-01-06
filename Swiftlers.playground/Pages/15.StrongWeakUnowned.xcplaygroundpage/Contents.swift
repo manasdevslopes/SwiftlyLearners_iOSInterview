@@ -112,6 +112,7 @@ bmw = nil
 // Weak
 class PersonsDetails1 {
   var name: String
+  // weak
   var car: Cars1?
   
   init(name: String) {
@@ -141,6 +142,9 @@ var john1: PersonsDetails1? = PersonsDetails1(name: "John1")
 var bmw1: Cars1? = Cars1(make: "BMW1")
 john1?.car = bmw1
 bmw1?.owner = john1
+bmw1 = nil
+john1 = nil
+
 john1 = nil
 bmw1 = nil
 
@@ -188,7 +192,7 @@ john2 = nil
 bmw2?.owner
 bmw2 = nil
 
-// 2. If I put, bmw2 nil first then try to access john2.car , then
+// 2. If I put, bmw2 nil first then try to access john2.car , then it will not crash
 bmw2 = nil
 john2?.car
 john2 = nil
