@@ -16,5 +16,7 @@
         <page name='Coding Questions'/>
         <page name='14.ClassVsStructs'/>
         <page name='15.StrongWeakUnowned'/>
+        <page name='16.FinalSingletonClass'/>
+        <page name='17.InitAndTypes'/>
     </pages>
 </playground>

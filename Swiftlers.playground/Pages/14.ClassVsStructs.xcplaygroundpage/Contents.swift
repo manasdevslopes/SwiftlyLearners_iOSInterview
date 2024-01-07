@@ -201,8 +201,6 @@ print(viewModel3.showButton)
 
 /* ******************************************************************************************************** */
 // Topics to be covered serial wise
-// 2. Final Class , Singleton Class - 1
-// 6. init and its types - 2
 // 7. Access Controls - 3
 // Associated Protocols - 4
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
@@ -212,6 +210,7 @@ print(viewModel3.showButton)
 // 12. Custom Sound with Local Notifications
 // 13. All Life Cycle Methods - 7
 // 14. Swift Concurrency
+// 15. Local Notifications
 
 
 
