@@ -332,3 +332,26 @@ do {
 } catch {
   print("Error encoding JSON: \(error)")
 }
+
+
+
+/* ******************************************************************************************************** */
+// Associated Protocol - To make the protocol generic
+protocol Calculate {
+  associatedtype Number
+  func addTwoNumber(a: Number, b: Number) -> Number
+}
+
+class IntCalculator: Calculate {
+  typealias Number = Int
+  func addTwoNumber(a: Number, b: Number) -> Number {
+    return a + b
+  }
+}
+
+class DoubleCalculator: Calculate {
+  typealias Number = Double
+  func addTwoNumber(a: Number, b: Number) -> Number {
+    return a + b
+  }
+}

@@ -3,7 +3,7 @@ import Foundation
 
 // Types
 /* ******************************************************************************************************** */
-// 1.Dsignated Initializers - Prinmary init - init
+// 1.Dsignated Initializers - Primary init - init
 class Person {
   var name: String
   

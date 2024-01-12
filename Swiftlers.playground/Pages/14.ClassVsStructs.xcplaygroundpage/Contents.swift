@@ -201,16 +201,14 @@ print(viewModel3.showButton)
 
 /* ******************************************************************************************************** */
 // Topics to be covered serial wise
-// 7. Access Controls - 3
-// Associated Protocols - 4
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
-// 9. Property Observer - 5
+// 9. Property Observer - 1 (willSet / didSet) & (getter / setter)
 // 10. Dependency Injection
-// 11. AppStorage & UserDefaults - 6
-// 12. Custom Sound with Local Notifications
-// 13. All Life Cycle Methods - 7
+// 11. AppStorage & UserDefaults - 2
+// 12. Custom Sound with Local Notifications - 5
+// 13. All Life Cycle Methods - 3
 // 14. Swift Concurrency
-// 15. Local Notifications
+// 15. Local Notifications - 4
 
 
 
