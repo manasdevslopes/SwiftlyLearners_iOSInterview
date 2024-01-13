@@ -203,7 +203,6 @@ print(viewModel3.showButton)
 // Topics to be covered serial wise
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
 // 10. Dependency Injection
-// 11. AppStorage & UserDefaults - 2
 // 12. Custom Sound with Local Notifications - 5
 // 13. All Life Cycle Methods - 3
 // 14. Swift Concurrency

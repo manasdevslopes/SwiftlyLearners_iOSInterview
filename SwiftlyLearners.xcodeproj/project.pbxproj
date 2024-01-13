@@ -11,6 +11,7 @@
 		FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD280332B3C32FE00DF475F /* ContentView.swift */; };
 		FDD280362B3C330400DF475F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD280352B3C330400DF475F /* Assets.xcassets */; };
 		FDD280392B3C330400DF475F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD280382B3C330400DF475F /* Preview Assets.xcassets */; };
+		FDE46DA02B528DDA00583164 /* AppStorageUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE46D9F2B528DDA00583164 /* AppStorageUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FDD280352B3C330400DF475F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FDD280382B3C330400DF475F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FDD2803F2B3C37D700DF475F /* Swiftlers.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Swiftlers.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		FDE46D9F2B528DDA00583164 /* AppStorageUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStorageUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */,
 				FDD280332B3C32FE00DF475F /* ContentView.swift */,
+				FDE46D9F2B528DDA00583164 /* AppStorageUserDefaults.swift */,
 				FDD280352B3C330400DF475F /* Assets.xcassets */,
 				FDD280372B3C330400DF475F /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			files = (
 				FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */,
 				FDD280322B3C32FE00DF475F /* SwiftlyLearnersApp.swift in Sources */,
+				FDE46DA02B528DDA00583164 /* AppStorageUserDefaults.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
