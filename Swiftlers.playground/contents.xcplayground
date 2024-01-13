@@ -18,5 +18,7 @@
         <page name='15.StrongWeakUnowned'/>
         <page name='16.FinalSingletonClass'/>
         <page name='17.InitAndTypes'/>
+        <page name='18.PropertyObserver'/>
+        <page name='19.GetterSetter'/>
     </pages>
 </playground>
