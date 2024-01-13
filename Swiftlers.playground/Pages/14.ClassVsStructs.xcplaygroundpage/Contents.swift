@@ -204,7 +204,6 @@ print(viewModel3.showButton)
 // 8. GET / POST API Call with generic Method, Also create GIST on Github for Decode ANY Type.
 // 10. Dependency Injection
 // 12. Custom Sound with Local Notifications - 5
-// 13. All Life Cycle Methods - 3
 // 14. Swift Concurrency
 // 15. Local Notifications - 4
 

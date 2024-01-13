@@ -20,5 +20,6 @@
         <page name='17.InitAndTypes'/>
         <page name='18.PropertyObserver'/>
         <page name='19.GetterSetter'/>
+        <page name='20.LifeCycleMethods'/>
     </pages>
 </playground>
