@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SwiftlyLearnersApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  @StateObject var lnManager = LocalNotificationManager()
+  
+  var body: some Scene {
+    WindowGroup {
+      // ContentView()
+      NotificationListView().environmentObject(lnManager)
     }
+  }
 }

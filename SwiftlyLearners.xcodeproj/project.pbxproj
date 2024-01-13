@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FD34DBEF2B52A55E00B3E59B /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */; };
+		FD34DBF22B52A84400B3E59B /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBF12B52A84400B3E59B /* LocalNotificationManager.swift */; };
+		FD34DBF42B52AFDB00B3E59B /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */; };
 		FDD280322B3C32FE00DF475F /* SwiftlyLearnersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */; };
 		FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD280332B3C32FE00DF475F /* ContentView.swift */; };
 		FDD280362B3C330400DF475F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD280352B3C330400DF475F /* Assets.xcassets */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
+		FD34DBF12B52A84400B3E59B /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
+		FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
 		FDD2802E2B3C32FE00DF475F /* SwiftlyLearners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftlyLearners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftlyLearnersApp.swift; sourceTree = "<group>"; };
 		FDD280332B3C32FE00DF475F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -35,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD34DBED2B52A51800B3E59B /* LocalNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				FD34DBF02B52A82800B3E59B /* Helpers */,
+				FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */,
+				FD34DBF62B52B06000B3E59B /* Model */,
+			);
+			path = LocalNotifications;
+			sourceTree = "<group>";
+		};
+		FD34DBF02B52A82800B3E59B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FD34DBF12B52A84400B3E59B /* LocalNotificationManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FD34DBF62B52B06000B3E59B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		FDD280252B3C32FD00DF475F = {
 			isa = PBXGroup;
 			children = (
@@ -55,6 +87,7 @@
 		FDD280302B3C32FE00DF475F /* SwiftlyLearners */ = {
 			isa = PBXGroup;
 			children = (
+				FD34DBED2B52A51800B3E59B /* LocalNotifications */,
 				FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */,
 				FDD280332B3C32FE00DF475F /* ContentView.swift */,
 				FDE46D9F2B528DDA00583164 /* AppStorageUserDefaults.swift */,
@@ -142,7 +175,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD34DBEF2B52A55E00B3E59B /* NotificationListView.swift in Sources */,
 				FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */,
+				FD34DBF42B52AFDB00B3E59B /* LocalNotification.swift in Sources */,
+				FD34DBF22B52A84400B3E59B /* LocalNotificationManager.swift in Sources */,
 				FDD280322B3C32FE00DF475F /* SwiftlyLearnersApp.swift in Sources */,
 				FDE46DA02B528DDA00583164 /* AppStorageUserDefaults.swift in Sources */,
 			);
@@ -288,9 +324,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacenova.SwiftlyLearners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,9 +356,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacenova.SwiftlyLearners;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
