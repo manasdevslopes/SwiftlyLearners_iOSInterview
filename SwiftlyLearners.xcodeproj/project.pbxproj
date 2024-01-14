@@ -10,6 +10,9 @@
 		FD34DBEF2B52A55E00B3E59B /* NotificationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */; };
 		FD34DBF22B52A84400B3E59B /* LocalNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBF12B52A84400B3E59B /* LocalNotificationManager.swift */; };
 		FD34DBF42B52AFDB00B3E59B /* LocalNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */; };
+		FD4475112B53F3AE0003ED0D /* Manas_Apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FD4475102B53F3AD0003ED0D /* Manas_Apple.jpg */; };
+		FD4475132B53F8500003ED0D /* NextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD4475122B53F8500003ED0D /* NextView.swift */; };
+		FD882A0A2B540E1400A2284E /* AppleIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD882A092B540E1400A2284E /* AppleIcon.swift */; };
 		FDD280322B3C32FE00DF475F /* SwiftlyLearnersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */; };
 		FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD280332B3C32FE00DF475F /* ContentView.swift */; };
 		FDD280362B3C330400DF475F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD280352B3C330400DF475F /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 		FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationListView.swift; sourceTree = "<group>"; };
 		FD34DBF12B52A84400B3E59B /* LocalNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotificationManager.swift; sourceTree = "<group>"; };
 		FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalNotification.swift; sourceTree = "<group>"; };
+		FD4475102B53F3AD0003ED0D /* Manas_Apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Manas_Apple.jpg; sourceTree = "<group>"; };
+		FD4475122B53F8500003ED0D /* NextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextView.swift; sourceTree = "<group>"; };
+		FD882A092B540E1400A2284E /* AppleIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleIcon.swift; sourceTree = "<group>"; };
 		FDD2802E2B3C32FE00DF475F /* SwiftlyLearners.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftlyLearners.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftlyLearnersApp.swift; sourceTree = "<group>"; };
 		FDD280332B3C32FE00DF475F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,8 +50,10 @@
 		FD34DBED2B52A51800B3E59B /* LocalNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				FD4475102B53F3AD0003ED0D /* Manas_Apple.jpg */,
 				FD34DBF02B52A82800B3E59B /* Helpers */,
 				FD34DBEE2B52A55E00B3E59B /* NotificationListView.swift */,
+				FD4475122B53F8500003ED0D /* NextView.swift */,
 				FD34DBF62B52B06000B3E59B /* Model */,
 			);
 			path = LocalNotifications;
@@ -65,6 +73,14 @@
 				FD34DBF32B52AFDB00B3E59B /* LocalNotification.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		FD882A082B540DF700A2284E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				FD882A092B540E1400A2284E /* AppleIcon.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		FDD280252B3C32FD00DF475F = {
@@ -87,6 +103,7 @@
 		FDD280302B3C32FE00DF475F /* SwiftlyLearners */ = {
 			isa = PBXGroup;
 			children = (
+				FD882A082B540DF700A2284E /* Components */,
 				FD34DBED2B52A51800B3E59B /* LocalNotifications */,
 				FDD280312B3C32FE00DF475F /* SwiftlyLearnersApp.swift */,
 				FDD280332B3C32FE00DF475F /* ContentView.swift */,
@@ -164,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDD280392B3C330400DF475F /* Preview Assets.xcassets in Resources */,
+				FD4475112B53F3AE0003ED0D /* Manas_Apple.jpg in Resources */,
 				FDD280362B3C330400DF475F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,10 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD4475132B53F8500003ED0D /* NextView.swift in Sources */,
 				FD34DBEF2B52A55E00B3E59B /* NotificationListView.swift in Sources */,
 				FDD280342B3C32FE00DF475F /* ContentView.swift in Sources */,
 				FD34DBF42B52AFDB00B3E59B /* LocalNotification.swift in Sources */,
 				FD34DBF22B52A84400B3E59B /* LocalNotificationManager.swift in Sources */,
+				FD882A0A2B540E1400A2284E /* AppleIcon.swift in Sources */,
 				FDD280322B3C32FE00DF475F /* SwiftlyLearnersApp.swift in Sources */,
 				FDE46DA02B528DDA00583164 /* AppStorageUserDefaults.swift in Sources */,
 			);
@@ -306,6 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftlyLearners/Preview Content\"";
@@ -338,6 +359,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftlyLearners/Preview Content\"";
